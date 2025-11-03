@@ -6,7 +6,7 @@ const router = express.Router();
 
 // Create a new contact
 router.post('/contacts', async (req, res) => {
-    console.log(req.body);  // Log the request body to verify incoming data
+    console.log(req.body);  
 
     try {
         const newContact = new Contact(req.body);
